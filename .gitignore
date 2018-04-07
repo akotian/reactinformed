@@ -1,0 +1,3 @@
+*.swp
+node_modules/
+car_picker/assets/bundles/
