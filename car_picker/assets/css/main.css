@@ -1,0 +1,14 @@
+.tile {
+  background: white;
+  box-sizing: border-box;
+  border: 5px solid rgb(240, 240, 240);
+}
+
+.results-container {
+  padding: 0 20px;
+  background: rgb(240, 240, 240);
+}
+
+.car-image {
+  height: 200px;
+}

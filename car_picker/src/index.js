@@ -1,7 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
-ReactDOM.render(
-  <h1>Hello, world</h1>,
-  document.getElementById('root')
+import carPickerApp from './reducers'
+import App from './components/App'
+
+const store = createStore(carPickerApp)
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('react-app')
 );

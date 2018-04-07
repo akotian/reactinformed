@@ -1,4 +1,5 @@
-{
+/* This is the default data to start with */
+export default {
   "autos": [{
     "id": 309701,
     "city": "Chowchilla",
