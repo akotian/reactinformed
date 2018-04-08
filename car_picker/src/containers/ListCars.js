@@ -7,11 +7,10 @@ import Card from '../components/Card'
 
 class ListCars extends Component {
 
-  // componentDidMount() {
-  //   // Fetch the list of available cars here
-  // }
   showCarTile(car) {
-    if(car.partnerPrequalification.downPayment <= this.props.maxDownPaymentSession) {
+    const {partnerPrequalification: {downPayment, emi}} = car
+    if(downPayment <= this.props.maxDownPaymentSession &&
+        emi <= this.props.maxMonthlyPaymentSession) {
       return true;
     }
     return false;
@@ -33,6 +32,7 @@ class ListCars extends Component {
 export default connect(
   state => ({
     autos: state.autos,
-    maxDownPaymentSession: state.maxDownPaymentSession
+    maxDownPaymentSession: state.maxDownPaymentSession,
+    maxMonthlyPaymentSession: state.maxMonthlyPaymentSession
   }),
   null)(ListCars)

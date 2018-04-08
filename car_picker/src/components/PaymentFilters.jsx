@@ -1,6 +1,7 @@
 import React from 'react'
 
 import DownPaymentFilter from '../containers/DownPaymentFilter'
+import MonthlyPaymentFilter from '../containers/MonthlyPaymentFilter'
 
 const PaymentFilters = (props) => (
   <div>
@@ -12,6 +13,7 @@ const PaymentFilters = (props) => (
         </button>
       </div>
     </div>
+    <MonthlyPaymentFilter />
     <DownPaymentFilter />
   </div>
 )
