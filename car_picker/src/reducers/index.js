@@ -29,10 +29,9 @@ export default function carPickerApp(state=initialState, action) {
     case UPDATE_SORT_ORDER:
       // Using inbuilt Array Sort function, to perform sorting Client side.
       // This Sort is a non stable sort
-      debugger;
       if (action.payload === SORT_DOWNPAYMENT_ASCENDING) {
         return {...state,
-          ...{autos: state.autos.sort((a, b) => (
+                ...{autos: state.autos.sort((a, b) => (
                   a.partnerPrequalification.downPayment - b.partnerPrequalification.downPayment
                 ))}}
       }
