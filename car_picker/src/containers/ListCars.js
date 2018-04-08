@@ -25,6 +25,6 @@ class ListCars extends Component {
 
 export default connect(
   state => ({
-    autos: state.carsData.autos
+    autos: state.autos
   }),
   null)(ListCars)

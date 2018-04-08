@@ -1,9 +1,8 @@
-// This is local data from memory
-//- const FETCH_CARS = 'FETCH_CARS'
-//-
-//- export function fetchCars() {
-//-   return {
-//-     type: FETCH_DATA,
-//-     payload: {"car": "Nissan"}
-//-   }
-//- }
+export const UPDATE_MAX_DOWNPAYMENT = 'UPDATE_MAX_DOWNPAYMENT'
+
+export function updateMaxDownPayment(newMax) {
+  return {
+    type: UPDATE_MAX_DOWNPAYMENT,
+    payload: newMax
+  }
+}
