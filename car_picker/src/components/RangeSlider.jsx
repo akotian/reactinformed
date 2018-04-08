@@ -8,7 +8,7 @@ const RangeSlider = (props) => (
       <input
         type="range" min="1" max={props.maxValue}
         value={props.currentValue}
-        onChange={props.handleInputChange}/>
+        onChange={props.handleInputChange} />
     </div>
     <div className="col-md-2"></div>
   </div>

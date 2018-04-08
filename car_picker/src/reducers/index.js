@@ -1,10 +1,9 @@
-import {MAX_MONTHLY_PAYMENT_INITIAL, MAX_DOWNPAYMENT_INITIAL} from '../constants'
 import {
   UPDATE_MAX_DOWNPAYMENT, UPDATE_MAX_MONTHLY_PAYMENT,
   UPDATE_SORT_ORDER } from '../actions'
 import carsData from '../cars_data.js'
-
 import {
+  MAX_MONTHLY_PAYMENT_INITIAL, MAX_DOWNPAYMENT_INITIAL,
   SORT_DOWNPAYMENT_ASCENDING, SORT_DOWNPAYMENT_DESCENDING,
   SORT_MONTHLY_PAYMENT_ASCENDING, SORT_MONTHLY_PAYMENT_DESCENDING
 } from '../constants'
@@ -20,7 +19,7 @@ const initialState = {
   ...{maxMonthlyPaymentSession, maxDownPaymentSession}
 }
 
-/*
+/**
  * Helper functions defined in reducer. Should be moved
  * to a better place like a library
  * Using inbuilt Array Sort function, to perform sorting Client side.

@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-import {MAX_DOWNPAYMENT_INITIAL} from '../constants'
 import {updateMaxDownPayment} from '../actions'
 import RangeSlider from '../components/RangeSlider'
+import {MAX_DOWNPAYMENT_INITIAL} from '../constants'
 
 class DownPaymentFilter extends Component {
 
@@ -26,7 +26,6 @@ class DownPaymentFilter extends Component {
         </div>
       </div>
     )
-
   }
 }
 

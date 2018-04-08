@@ -4,15 +4,6 @@ import ListCars from '../containers/ListCars'
 import PaymentFilters from '../components/PaymentFilters'
 import SortCars from '../containers/SortCars'
 
-
-// export class App extends Component {
-//
-//   render() {
-//     <div>Hello I am the redux App</div>
-//   }
-//
-// }
-
 const App = () => (
   <div className="row">
     <div className="col-md-3">

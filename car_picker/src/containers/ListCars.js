@@ -6,6 +6,10 @@ import Card from '../components/Card'
 
 class ListCars extends Component {
 
+  /**
+   * Determine whether a car should be shown
+   * based on filters selected by the user
+   */
   showCarTile(car) {
     const {partnerPrequalification: {downPayment, emi}} = car
     if(downPayment <= this.props.maxDownPaymentSession &&
