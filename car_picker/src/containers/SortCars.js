@@ -22,7 +22,7 @@ class SortCars extends Component {
           {this.props.autoCount.toLocaleString()} vehicles
         </div>
         <div className="col-md-10">
-          Sort By:
+          Sort By:&nbsp;
           <div className="btn-group" role="group" onClick={(e) => this.sortCars(e)}>
             <button type="button" className="btn btn-default" data-sort={SORT_DOWNPAYMENT_ASCENDING}>
               Down Payment $-$$

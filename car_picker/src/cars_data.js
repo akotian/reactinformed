@@ -17,7 +17,7 @@ export default {
     "year": 2011,
     "partnerPrequalification": {
       "autoId": 309701,
-      "downPayment": 100,
+      "downPayment": 200,
       "emi": 165.47876642241337,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -36,7 +36,7 @@ export default {
     "sourceUrl": "http://clicks.leaddelivery.net/0000-4241/JN8AZ2KR6BT206379",
     "prequalifications": [{
       "autoId": 309701,
-      "downPayment": 100,
+      "downPayment": 300,
       "emi": 165.47876642241337,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -68,7 +68,7 @@ export default {
     "year": 2012,
     "partnerPrequalification": {
       "autoId": 257010,
-      "downPayment": 100,
+      "downPayment": 400,
       "emi": 173.83282778661805,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -87,7 +87,7 @@ export default {
     "sourceUrl": "http://clicks.leaddelivery.net/0000-4241/KMHCT4AE8CU090190",
     "prequalifications": [{
       "autoId": 257010,
-      "downPayment": 100,
+      "downPayment": 150,
       "emi": 173.83282778661805,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -170,7 +170,7 @@ export default {
     "year": 2012,
     "partnerPrequalification": {
       "autoId": 324044,
-      "downPayment": 100,
+      "downPayment": 170,
       "emi": 182.18688915082268,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -189,7 +189,7 @@ export default {
     "sourceUrl": "http://clicks.leaddelivery.net/0000-4241/2G1WG5E36C1300438",
     "prequalifications": [{
       "autoId": 324044,
-      "downPayment": 100,
+      "downPayment": 109,
       "emi": 182.18688915082268,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -221,7 +221,7 @@ export default {
     "year": 2012,
     "partnerPrequalification": {
       "autoId": 308517,
-      "downPayment": 100,
+      "downPayment": 353,
       "emi": 182.18688915082268,
       "status": "approved",
       "minimumDownPayment": 100,
@@ -600,7 +600,7 @@ export default {
       "downPayment": 100,
       "emi": 182.2537216417363,
       "status": "approved",
-      "minimumDownPayment": 100,
+      "minimumDownPayment": 333,
       "maximumDownPayment": 4097,
       "prequalifiedAmount": 35000,
       "term": 72,

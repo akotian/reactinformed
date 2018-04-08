@@ -18,7 +18,7 @@ const Card = (props) => (
       </div>
       {/* UI does not show rounded values */}
       <div className="col-md-3 pull-right">
-        {Math.ceil(props.partnerPrequalification.emi)}&#47;mo
+        ${Math.ceil(props.partnerPrequalification.emi)}&#47;mo
       </div>
     </div>
     <div className="row">
@@ -26,7 +26,7 @@ const Card = (props) => (
         {props.odometer} miles&middot;{props.city}{props.state}
       </div>
       <div className="col-md-3">
-        {props.partnerPrequalification.downPayment} down
+        ${props.partnerPrequalification.downPayment} down
       </div>
     </div>
   </div>
