@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
+import {MAX_MONTHLY_INITIAL} from '../constants'
 import {updateMaxDownPayment} from '../actions'
 import RangeSlider from '../components/RangeSlider'
 
@@ -17,7 +18,7 @@ class DownPaymentFilter extends Component {
         </div>
         <div className="row">
           <RangeSlider
-            maxValue={this.props.maxDownPaymentInitial}
+            maxValue={MAX_MONTHLY_INITIAL}
             currentValue={this.props.maxDownPaymentSession}
             handleInputChange={
               (e) => this.props.updateMaxDownPayment(e.target.value)
@@ -31,7 +32,6 @@ class DownPaymentFilter extends Component {
 
 export default connect(
   state => ({
-    maxDownPaymentInitial: state.maxDownPaymentInitial,
     maxDownPaymentSession: state.maxDownPaymentSession
   }),
   {updateMaxDownPayment})(DownPaymentFilter)

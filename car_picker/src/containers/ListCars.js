@@ -10,13 +10,20 @@ class ListCars extends Component {
   // componentDidMount() {
   //   // Fetch the list of available cars here
   // }
+  showCarTile(car) {
+    if(car.partnerPrequalification.downPayment <= this.props.maxDownPaymentSession) {
+      return true;
+    }
+    return false;
+  }
+
   render() {
     return (
       <div className="row">
         {this.props.autos.map((car, index, allCars) =>
-            <div key={car.id}>
-              <Card {...car} />
-            </div>
+          <div key={car.id}>
+            {this.showCarTile(car) ? <Card {...car} />: ''}
+          </div>
         )}
       </div>
     )
@@ -25,6 +32,7 @@ class ListCars extends Component {
 
 export default connect(
   state => ({
-    autos: state.autos
+    autos: state.autos,
+    maxDownPaymentSession: state.maxDownPaymentSession
   }),
   null)(ListCars)
