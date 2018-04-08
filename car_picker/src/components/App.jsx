@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 
 import ListCars from '../containers/ListCars'
 import PaymentFilters from '../components/PaymentFilters'
+import SortCars from '../containers/SortCars'
 
 
 // export class App extends Component {
@@ -19,7 +20,7 @@ const App = () => (
     </div>
     <div className="col-md-9 results-container">
       <div className="row">
-        Vehicle Count, Downpayment Filter here
+        <SortCars />
       </div>
       <ListCars />
     </div>

@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-// import {fetchCars} from '../actions'
 
 import Card from '../components/Card'
 
